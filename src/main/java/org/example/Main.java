@@ -18,14 +18,14 @@ public class Main {
 
     public static boolean isCatPlaying(boolean isSummer, int temp) {
      if(isSummer){
-         return temp >= 25 && temp<=45;
+         return temp >= 25 && temp <= 45;
      }else{
          return temp >= 25 && temp <= 35;
      }
     }
 
     public static double area(double width, double height) {
-       if(width < 0 && height < 0){
+       if(width < 0 || height < 0){
            return -1;
        }else{
            return width*height;
